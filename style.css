@@ -139,16 +139,24 @@ nav a {
 .btn {
     background-color: #FF6B6B;
     color: white;
-    padding: 12px 24px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
     display: inline-block;
+    border: 2px solid #FF6B6B;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn:hover {
     background-color: #FF5252;
+    border-color: #FF5252;
+    box-shadow: 0 6px 20px rgba(255, 82, 82, 0.4);
+    transform: translateY(-2px);
 }
 
 .login-form {
