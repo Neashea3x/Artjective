@@ -1,2 +1,2 @@
-# Artovia
+# Artjective
 WSD Project

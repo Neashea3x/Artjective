@@ -1,61 +1,77 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artovia - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Artjective - Home</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
-
 <body>
-    <header>
+
+
+    <header class="navbar">
         <div class="logo">
-            <img src="images/logo.svg" alt="Artovia Logo">
-            <span>Artovia</span>
+            <img src="images/artjective-logo.svg" alt="Artjective Logo">
+            <span>Artjective</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="home.html">Home</a>
+            <a href="features.html">Upload</a>
+            <a href="About">Profile</a>
+            <a class="join-btn" href="#">Join Today</a>
         </nav>
     </header>
     
-    <main>
-    <section class="homepage-content content-box">
-        <div class="welcome-header">
-            <h1>Welcome to Artovia!</h1>
+    <section class-="hero">
+        <div class="hero-content">
+            <h1>Discover. Share. Connect.</h1>
+            <p>Join Artjective, the ultimate platform for artists to showcase their creativity and connect with a vibrant community.</p>
+            <a href="register.html" class="join-btn">Join Now</a>
         </div>
-        
-        <div class="content-layout">
-            <div class="intro-text">
-                <h3>The ultimate online platform where creativity knows no bounds!</h3>
-                <p>Dive into a vibrant community of artists from around the globe and showcase your unique talents. Whether you're a painter, sculptor, digital artist, or any other type of creative soul, Artovia is your canvas to shine.</p>
-                <p>Connect with fellow artists, share your work, and explore a world of inspiration. Join us today and let your creativity soar!</p>
-            </div>
-            
-            <div class="photo-gallery">
-                <img src="images/photo1.jpg" alt="Abstract digital artwork featuring vibrant colors and geometric shapes" title="Photo by Rifqi Ali Ridho on Unsplash">
-                <img src="images/photo2.jpg" alt="Landscape painting with mountains and flowing water" title="Photo by Kelly Sikkema on Unsplash">
-                <img src="images/photo3.jpg" alt="Contemporary sculpture made from recycled materials" title="Photo by refargotohp on Unsplash">
-                <img src="images/photo4.jpg" alt="Portrait painting capturing human emotion and expression" title="Photo by Quino Al on Unsplash">
-            </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Showcase Your Work</h3>
+            <p>Upload your artwork and share it with a global audience.</p>
         </div>
+
+        <div class="card">
+            <h3>Connect</h3>
+            <p>Follow creators, build your audience, and grow your presence</p>
+        </div>
+
+        <div class="card">
+            <h3>Get Feedback</h3>
+            <p>Engage with a community of artists, receive feedback, and collaborate on projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Get Discovered</h3>
+            <p>Let your art reach people who will appreciate it.</p>
+        </div>
+
+        <div class="vote">
+            <h3>Vote for Your Favorite Art</h3>
+            <p>Support your favorite artists by voting for their work and helping them gain recognition.</p>
+        </div>
+    </section>
         
-        <div class="cta-section">
-            <div class="cta-btns">
-                <a href="login.html" class="btn" aria-label="Sign in to your existing account">Sign In</a>
-                <a href="register.html" class="btn" aria-label="Create a new account to join Artovia">Create Account</a>
             </div>
         </div>
     </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Artovia</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+    <section class="cta">
+                <h2>Ready to get started?</h2>
+                <a class="cta" href="#">Get Started</a>
+            </div>
+        </section>
+
+        <footer>
+        <p>&copy; 2026 Artjective. All rights reserved.</p>
+        </footer>
+
+    </body>
 </html>

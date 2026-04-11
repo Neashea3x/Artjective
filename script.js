@@ -1,7 +1,7 @@
-// Simple JavaScript for Artovia
+// Simple JavaScript for Artjective
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Artovia website loaded');
+    console.log('Artjective website loaded');
 
     const clickedLinks = JSON.parse(localStorage.getItem('clickedLinks') || '[]');
 
