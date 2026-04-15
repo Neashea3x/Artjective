@@ -5,115 +5,101 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-image: url('images/background.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding-top: 80px;
+html {
+    background: #05070a;
 }
+
+body {
+    background: radial-gradient(circle at center, rgba(0,225,180,0.3),
+                rgba(180,0,225,0.2),
+                #05070a 70%);
+    color: white;
+    height: 100vh;
+}
+    
 
 
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    padding: 25px 60px;
 }
 
-.logo img {
-    width: 50px;
-    height:auto;
-}
-
-.nav a {
-    color: white;
+.nav-center a {
+    margin: 0 15px;
+    color: #aaa;
     text-decoration: none;
-    font-size: 14px;
+    transition: 0.3s;
 }
 
-.join-btn {
-    background: rgb(0, 138, 131);
-    color: black !important;
-    padding: 8px 14px;
-    border-radius: 8px;}
+.nav-center a:hover {
+    color: white;
+}
+
+.nav-left {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+ 
+.nav-right .login {
+    margin-right: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.signup {
+    padding: 8px 18px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
 
 .hero {
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 0 20px;
+    margin-top: 80px;
 }
 
-.hero h1 {
+.logo {
+    width: 260px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 25px rgba(0,255,180,0.5))
+            drop-shadow(0 0 50px rgba(180,0,225,0.3));
+} 
+
+h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.hero p {
-    opacity: 0.8;
-    margin-bottom: 20px;
-}   
-
-.login-btn {
-    padding: 12px 20px;
-    background: #008472;
-    color: black;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
+p {
+    color: #aaa;
+    margin-bottom: 30px;
 }
 
-.join-btn {
-    padding: 12px 20px;
-    background: #008472;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.features {
+.btns {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 80px 20px;
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
-    padding: 20px;
-    width: 250px;
-    backdrop-filter: blur(10px);
+.primary {
+    background: linear-gradient(135deg, #00ffb4, #00cfff);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.cta {
-   padding: 12px 20px;
-   background: #3fd6c2;
-   color: black;
-   border-radius: 10px;
-   text-decoration: none;
-   font-weight: bold;
-}
-
-
-
-footer {
-    text-align: center;
-    padding: 30px;
-    opacity: 0.6;
+.secondary {
+    background: transparent;
+    border: 1px solid #555;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
 }
