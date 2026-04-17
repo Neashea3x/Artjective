@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artjective - Home</title>
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="shortcut icon" href="images/favicon.svg">
-    <link rel="stylesheet" href="style.css?v=2">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>ARTJECTIVE</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
 <body>
 
-    <nav class="nav">
-        <div class="nav-left">
-            <link rel="logo" href="images/logo.svg" alt="logo">
-        </div>
-        <div class="nav-center">
-            <a href="features.html">Features</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="index.html">Home</a>
-        </div>
+        <header class="nav">
+            <div class="logo">ARTJECTIVE</div>
 
-        <div class ="nav-right">
-            <button onclick="openLogin()">Login</button>
-            <a href="register.html" class="signup">Sign Up</a>
-    </nav>
+            <nav class="links">
+                <a href="explore.html">Explore</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </header>
 
-    <section class="hero">
+        <section class="hero">
+            <h1>A creative space to share, discover, and celebrate art.</h1>
+            <p>Minimal pressure. Maximum creativity</p>
+            <a class="primary-btn" href="explore.html">Explore Artwork</a>
+        </section>
 
-        <div class="hero-card">
-            <img src="images/logoh.svg" class="logo-img">
+        <section class="gallery">
+            <h2>Featured Artwork</h2>
 
-            <h1>ARTJECTIVE</h1>
-            <p>Unleash Your Creativity</p>
-        </div>
+            <div class="grid">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
 
-        <div class="button">
-            <button class="primary" onclick="window.location.href='register.html'">Get Started</button>
-            <button class="secondary" onclick="window.location.href='features.html'">Learn More</button>
-        </div>
-    </div>
-    </section>
+        <section class="about">
+            <h2>About the Community</h2>
+            <p>This platform is built for Artist who want a safe, calm place to share their work, 
+                connect with others, and grow.</p>
+            
+            <div class="highlights">
+                <h3>Monthly Contest</h3>
+                <p>After joining, enjoy a little friendly competition by participating in contest held monthly.
+                   Each month brings a new theme for artist to explore, share, and give recognition to other Artist.
+                </p>
+            </div>
+        </section>
 
-    <div id="loginModal" class="modal">
-        <div class="modal-box">
-            <h2>Login</h2>
-
-            <input type="email" id="email" name="email" placeholder="Email" required aria-label="Enter your email address">
-            <input type="password" id="password" name="password" placeholder="Password" required aria-label="Enter your password">
-        
-            <button>Login</button>
-
-            <p onclick="closeLogin()">Close</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-
-
+        <footer>
+            <p>2026 Artjective. Created for artist</p>
+        </footer>
 </body>
 </html>
-    
